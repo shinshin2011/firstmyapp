@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>日本語タイ語通訳</title>
+    <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+    <button onclick="myFunction()" style="font-size:24px">日本語<i class="fa fa-microphone"></i></button>
+    <button onclick="myFunction1()" style="font-size:24px">Thai <i class="fa fa-microphone"></i></button>
+    <button id="01" style="display:none" class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+  話してください。。。。
+</button>
+
+    <button id="02" style="display:none" class="btn btn-primary">
+    <span class="spinner-border spinner-border-sm"></span>
+    พูดอะไรหน่อย.....
+</button>
+</div>
+
+<script>
+
+function myFunction() {
+  location.href = "/action";
+  document.getElementById("01").style.display = "";
+  document.getElementById("j1").style.display = "none";
+}
+function myFunction1() {
+  location.href = "/Thai";
+  document.getElementById("02").style.display = "";
+  document.getElementById("j1").style.display = "none";
+}
+</script>
+<p id="j1" style="font-size:200%">タイ語訳＞＞{{myresult}} </p>
+
+</body>
+</html>
