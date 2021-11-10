@@ -4,7 +4,6 @@ from datetime import date, datetime
 import speech_recognition as sr
 from gtts import gTTS
 import playsound
-import tkinter as tk
 import time
 import os
 from flask import Flask, render_template
