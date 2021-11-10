@@ -1,11 +1,13 @@
 from flask import Flask, render_template
-
+import speech_recognition as sr
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("speech.html")
+    translator = googletrans.Translator()
+    text_result = translator.translate(text2, src='auto', dest='ja')
+    return render_template("speech.html", myresult = text_result.text))
 @app.route('/action')
 def act():
     
