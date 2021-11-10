@@ -6,9 +6,6 @@ async-timeout==3.0.1
 attrs==21.2.0
 click==8.0.3
 comtypes==1.1.8
-conda==4.10.3
-conda-package-handling @ file:///C:/ci/conda-package-handling_1603003327818/work
-cryptography @ file:///C:/ci/cryptography_1605526388508/work
 cycler==0.10.0
 dateparser==1.0.0
 docutils==0.17.1
