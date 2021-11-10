@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    text2 = "สวัสดี สบายดีไหม"
     translator = googletrans.Translator()
     text_result = translator.translate(text2, src='auto', dest='ja')
     return render_template("speech.html", myresult = text_result.text))
