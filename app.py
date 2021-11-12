@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     
-    return render_template("speech.html")
+    return render_template("home.html")
 @app.route('/action')
 def act():
     
