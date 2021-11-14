@@ -100,9 +100,10 @@ function closeSidebar() {
       }
     }
 
-    var x = finalTranscript;
-    document.getElementById("textT").innerHTML = x
-    document.getElementById("text1").innerHTML = x
+    resultDiv.innerHTML = finalTranscript + '<i style="color:#ddd;">' + interimTranscript + '</i>';
+    var x = finalTranscript +  interimTranscript;
+    document.getElementById("textT").innerHTML = finalTranscript + '<i style="color:#ddd;">' + interimTranscript + '</i>';
+    document.getElementById("text1").innerHTML = finalTranscript + '<i style="color:#ddd;">' + interimTranscript + '</i>';
 
 
   }
